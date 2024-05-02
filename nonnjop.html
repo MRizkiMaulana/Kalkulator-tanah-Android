@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Nilai Perolehan Tanah</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Nilai Perolehan Tanah</h1>
+        <form id="nilaiPerolehanTanahForm">
+            <label for="namapenjual">Nama Penjual:</label>
+            <input type="text" id="namapenjual" required>
+            
+            <label for="namapembeli">Nama Pembeli:</label>
+            <input type="text" id="namapembeli" required>
+            
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" required>
+            
+            <label for="alamattanah">Alamat Tanah:</label>
+            <input type="text" id="alamattanah" required>
+            
+            <label for="nonopsppt">Nomor NOP SPPT:</label>
+            <input type="text" id="nonopsppt" required>
+
+            <label for="hargaJual">Harga Jual:</label>
+            <input type="number" id="hargaJual" required>
+            
+            <label for="luasTanah">Luas Tanah (m<sup>2</sup>):</label>
+            <input type="number" id="luasTanah" required>            
+
+            <label for="hitungType">Pilih Hitung:</label><br><br>
+            <input type="radio" id="hitungAjb" name="hitungType" value="hitung-ajb" checked>
+            <label for="hitungAjb">Hitung AJB</label><br>
+            <input type="radio" id="hitungSegel" name="hitungType" value="hitung-segel">
+            <label for="hitungSegel">Hitung Segel</label><br>
+            
+            <button type="submit">Hitung</button><br>
+            <p>Hitung Menggunakan NJOP, klik <a href="index.html">di sini</a>.</p>
+        </form>
+        <div id="hasil"></div>
+    </div>
+    <script src="src/js/nonjop.js"></script>
+</body>
+</html>

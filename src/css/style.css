@@ -1,0 +1,75 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#hasil {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+#hasil br {
+    display: none;
+}
+@media print {
+    /* Atur ukuran font agar sesuai dengan ukuran layar */
+    body {
+        font-size: 2.2vw; /* Sesuaikan angka sesuai kebutuhan */
+    }
+
+    /* Atur ukuran elemen lainnya */
+    .container {
+        width: 95vw; /* Misalnya, 95% dari lebar layar */
+        margin: auto;
+    }
+
+    /* Atur margin atau padding lainnya sesuai kebutuhan */
+    /* Misalnya:
+    .header {
+        margin-top: 5vh; 
+    }
+    */
+}
